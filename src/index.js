@@ -1,7 +1,4 @@
-class Sample {
-    constructor(){
-
-    }
-}
-
-module.exports = Sample;
+module.exports = {
+  ...require("./fib"),
+  ...require("./bin"),
+};

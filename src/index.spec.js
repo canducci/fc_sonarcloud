@@ -1,7 +1,10 @@
-const Sample = require(".");
+const math = require(".");
 
-describe("Sample Unit Tests", () => {
-  it("should create class Sample", () => {
-    expect(new Sample()).toBeInstanceOf(Sample);
-  });
+describe("Module test", () => {
+    test("fib fn", ()=>{
+        expect(math.fib).toBeDefined();
+    })
+    test("bin fn", ()=>{
+        expect(math.bin).toBeDefined();
+    })
 });
